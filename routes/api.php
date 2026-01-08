@@ -15,3 +15,8 @@ Route::POST('/estudio/guardar-boleto', [RifaController::class,'GuardarBoletos'])
 Route::POST('/estudio/editar-boleto', [RifaController::class,'EditarBoleto']);
 Route::POST('/estudio/no-ganador-boleto', [RifaController::class,'NoGanadorBoleto']);
 //**************************************************************************************//
+
+
+Route::get('/ping', function () {
+    return response()->json(['pong' => true]);
+});
